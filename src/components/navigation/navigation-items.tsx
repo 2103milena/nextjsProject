@@ -30,7 +30,10 @@ export const NavList: React.FC<NavListProps> = ({ menuItems }) => {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <Link href="/about">{menuItems.about}</Link>
+        <Link href="/home" className="text-gray-800 font-bold hover:text-blue-500 transition duration-300">
+          {menuItems.home}
+        </Link>
+
       </Typography>
       <Typography
         as="li"
@@ -38,7 +41,7 @@ export const NavList: React.FC<NavListProps> = ({ menuItems }) => {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <Link href="/rules">{menuItems.rules}</Link>
+        <Link href="/quiz" className="text-gray-800 font-bold hover:text-blue-500 transition duration-300">{menuItems.quiz}</Link>
       </Typography>
       <Typography
         as="li"
@@ -46,37 +49,13 @@ export const NavList: React.FC<NavListProps> = ({ menuItems }) => {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <Link href="/membership">{menuItems.membership}</Link>
+        <Link href="/newsletter" className="text-gray-800 font-bold hover:text-blue-500 transition duration-300">{menuItems.newsletter}</Link>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
         className="p-1 font-medium"
-      >
-        <Link href="/faq">{menuItems.faq}</Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <Link href="/meeting">{menuItems.meeting}</Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <Link href="/sports">{menuItems.sports}</Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium rounded border bg-blue-200 font-bold p-2"
       >
         {isLoggedIn ? (
           <Link

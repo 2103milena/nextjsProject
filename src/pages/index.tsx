@@ -2,10 +2,6 @@ import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 
-// import { Inter } from 'next/font/google'
-
-// const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   const { t } = useTranslation();
   const localizedStrings = {
@@ -14,7 +10,7 @@ export default function Home() {
   };
   return (
     <div>
-      <div>{localizedStrings.world}</div>
+      <div className={"font-whisper"}>{localizedStrings.world}</div>
       <div>{localizedStrings.hello}</div>
     </div>
   );

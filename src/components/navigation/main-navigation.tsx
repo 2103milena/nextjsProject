@@ -15,17 +15,15 @@ import { NavList } from './navigation-items';
  * we can change the colors when we agree on the color schema and theme for the entire app
  */
 
+
 export const NavBar: React.FC = () => {
   const { t } = useTranslation();
   const [openNav, setOpenNav] = useState(false);
 
   const menuItems = {
-    about: t('about'),
-    rules: t('rules'),
-    membership: t('membership'),
-    faq: t('faq'),
-    meeting: t('meeting'),
-    sports: t('sports'),
+    home: t('common:home'),
+    quiz: t('common:quiz'),
+    newsletter: t('common:newsletter'),
     login: t('login'),
   };
 
@@ -41,13 +39,12 @@ export const NavBar: React.FC = () => {
   }, []);
 
   return (
-    <Navbar className="mx-auto fixed max-w-full px-6 py-3 top-0 z-50">
+    <Navbar className="mx-auto fixed max-w-full px-6 py-3 top-0 z-50 bg-blue-gray-200">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Link href="/">
           <Typography
-            href="#"
             variant="h6"
-            className="mr-4 cursor-pointer py-1.5"
+            className={"font-whisper text-4xl"}
           >
             Kraljevo à la française
           </Typography>
