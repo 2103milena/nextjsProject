@@ -14,3 +14,9 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+
+
+  .bg-custom{
+    background-image: url('/public/images/kv.jpg');
+  }
+

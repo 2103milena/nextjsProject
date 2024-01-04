@@ -10,8 +10,11 @@ export default function Home() {
   };
   return (
     <div>
-      <div className={"font-whisper"}>{localizedStrings.world}</div>
-      <div>{localizedStrings.hello}</div>
+
+      <div className="bg-custom-background bg-cover bg-center h-screen">
+        <div className={"font-whisper"}>{localizedStrings.world}</div>
+        <div>{localizedStrings.hello}</div>
+      </div>
     </div>
   );
 }
